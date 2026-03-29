@@ -15,7 +15,7 @@ class Var:
     DB_NAME = getenv("DB_NAME")
     BAN_SUPPORT = getenv("BAN_SUPPORT", "https://t.me/about_zani")
     FSUB_LINK_EXPIRY = int(getenv("FSUB_LINK_EXPIRY", "120"))
-    CHANNEL_ID = int(getenv("CHANNEL_ID", "0"))
+    CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002647889053"))
     MHCHANNEL_URL = getenv("MHCHANNEL_URL", "https://t.me/+t0weAQsq_-1lYmJl")
     ANIME = getenv("ANIME", "Is It Wr2131ong to Try to Pi123ck Up Girls in a Dungeon?")
     CUSTOM_BANNER = getenv("CUSTOM_BANNER", "https://ibb.co/5xjBCXKp")
@@ -25,7 +25,7 @@ class Var:
     LOG_CHANNEL = int(getenv("LOG_CHANNEL", "-1003811296779"))
     MAIN_CHANNEL = int(getenv("MAIN_CHANNEL", "-1002647889053"))
     FILE_STORE = int(getenv("FILE_STORE", "-1002793828826"))
-    ADMINS = list(map(int, getenv("ADMINS", "5756495153").split()))
+    ADMINS = list(map(int, getenv("ADMINS", "5770911041").split()))
 
     RSS_ITEMS = getenv("RSS_ITEMS", "").split()
     SEND_SCHEDULE = getenv("SEND_SCHEDULE", "True").lower() == "true"
