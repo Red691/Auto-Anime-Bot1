@@ -11,8 +11,8 @@ class Var:
     API_ID = getenv("API_ID")
     API_HASH = getenv("API_HASH")
     BOT_TOKEN = getenv("BOT_TOKEN")
-    DB_URI = getenv("DB_URI")
-    DB_NAME = getenv("DB_NAME")
+    DB_URI = getenv("DB_URL")
+    DB_NAME = getenv(New)
     BAN_SUPPORT = getenv("BAN_SUPPORT", "https://t.me/about_zani")
     FSUB_LINK_EXPIRY = int(getenv("FSUB_LINK_EXPIRY", "120"))
     CHANNEL_ID = int(getenv("CHANNEL_ID", "0"))
@@ -21,10 +21,10 @@ class Var:
     CUSTOM_BANNER = getenv("CUSTOM_BANNER", "https://ibb.co/5xjBCXKp")
 
     PROTECT_CONTENT = True if getenv('PROTECT_CONTENT', "False") == "True" else False 
-    BACKUP_CHANNEL = int(getenv("BACKUP_CHANNEL", "-1002876087585"))
-    LOG_CHANNEL = int(getenv("LOG_CHANNEL", "-1003174074383"))
-    MAIN_CHANNEL = int(getenv("MAIN_CHANNEL", "-1002812370717"))
-    FILE_STORE = int(getenv("FILE_STORE", "-1002334590710"))
+    BACKUP_CHANNEL = int(getenv("BACKUP_CHANNEL", "-1002793828826"))
+    LOG_CHANNEL = int(getenv("LOG_CHANNEL", "-1003811296779"))
+    MAIN_CHANNEL = int(getenv("MAIN_CHANNEL", "-1002647889053"))
+    FILE_STORE = int(getenv("FILE_STORE", "-1002793828826"))
     ADMINS = list(map(int, getenv("ADMINS", "5756495153").split()))
 
     RSS_ITEMS = getenv("RSS_ITEMS", "").split()
