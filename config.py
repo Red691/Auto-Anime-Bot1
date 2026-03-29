@@ -8,24 +8,24 @@ load_dotenv()
 LOGS = logging.getLogger(__name__)
 
 class Var:
-    API_ID = 20594537
-    API_HASH = "c505a4e5bb7d482197875888af544f17"
-    BOT_TOKEN = "8555965442:AAEGhqABnXtCTbPGlZPNUAk4hlu20ztgmg8555965442:AAEGhqABnXtCTbPGlZPNUAk4hlu20ztgmgY"
-    DB_URI = "mongodb+srv://reelcraft99:reelcraft99reelcraft@cluster0.f0sv73o.mongodb.net/?appName=Cluster0"
-    DB_NAME = "Anime_bot"
+    API_ID = getenv("API_ID")
+    API_HASH = getenv("API_HASH")
+    BOT_TOKEN = getenv("BOT_TOKEN")
+    DB_URI = getenv("DB_URI")
+    DB_NAME = getenv("DB_NAME")
     BAN_SUPPORT = getenv("BAN_SUPPORT", "https://t.me/about_zani")
     FSUB_LINK_EXPIRY = int(getenv("FSUB_LINK_EXPIRY", "120"))
-    CHANNEL_ID = int(getenv("CHANNEL_ID") or "-1002647889053")
+    CHANNEL_ID = int(getenv("CHANNEL_ID", "0"))
     MHCHANNEL_URL = getenv("MHCHANNEL_URL", "https://t.me/+t0weAQsq_-1lYmJl")
     ANIME = getenv("ANIME", "Is It Wr2131ong to Try to Pi123ck Up Girls in a Dungeon?")
     CUSTOM_BANNER = getenv("CUSTOM_BANNER", "https://ibb.co/5xjBCXKp")
 
     PROTECT_CONTENT = True if getenv('PROTECT_CONTENT', "False") == "True" else False 
-    BACKUP_CHANNEL = -1002793828826
-    LOG_CHANNEL = -1003811296779
-    MAIN_CHANNEL = -1002647889053
-    FILE_STORE = -1002793828826
-    ADMINS = list(map(int, getenv("ADMINS", "5770911041").split()))
+    BACKUP_CHANNEL = int(getenv("BACKUP_CHANNEL", "-1002876087585"))
+    LOG_CHANNEL = int(getenv("LOG_CHANNEL", "-1003174074383"))
+    MAIN_CHANNEL = int(getenv("MAIN_CHANNEL", "-1002812370717"))
+    FILE_STORE = int(getenv("FILE_STORE", "-1002334590710"))
+    ADMINS = list(map(int, getenv("ADMINS", "5756495153").split()))
 
     RSS_ITEMS = getenv("RSS_ITEMS", "").split()
     SEND_SCHEDULE = getenv("SEND_SCHEDULE", "True").lower() == "true"
