@@ -11,7 +11,7 @@ class Var:
     API_ID = getenv("API_ID")
     API_HASH = getenv("API_HASH")
     BOT_TOKEN = getenv("BOT_TOKEN")
-    DB_URI = getenv("DB_URI")
+    DB_URI = getenv("DB_URI" or "mongodb+srv://reelcraft99:reelcraft99reelcraft@cluster0.f0sv73o.mongodb.net/?retryWrites=true&w=majority"
     DB_NAME = getenv("DB_NAME")
     BAN_SUPPORT = getenv("BAN_SUPPORT", "https://t.me/about_zani")
     FSUB_LINK_EXPIRY = int(getenv("FSUB_LINK_EXPIRY", "120"))
