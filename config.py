@@ -21,11 +21,11 @@ class Var:
     CUSTOM_BANNER = getenv("CUSTOM_BANNER", "https://ibb.co/5xjBCXKp")
 
     PROTECT_CONTENT = True if getenv('PROTECT_CONTENT', "False") == "True" else False 
-    BACKUP_CHANNEL = int(getenv("BACKUP_CHANNEL", "-1002793828826"))
-    LOG_CHANNEL = int(getenv("LOG_CHANNEL", "-1003811296779"))
-    MAIN_CHANNEL = int(getenv("MAIN_CHANNEL", "-1002647889053"))
-    FILE_STORE = int(getenv("FILE_STORE", "-1002793828826"))
-    ADMINS = list(map(int, getenv("ADMINS", "5770911041").split()))
+    BACKUP_CHANNEL = int(getenv("BACKUP_CHANNEL") or "-1002793828826"))
+    LOG_CHANNEL = int(getenv("LOG_CHANNEL") or "-1003811296779"))
+    MAIN_CHANNEL = int(getenv("MAIN_CHANNEL") or "-1002647889053"))
+    FILE_STORE = int(getenv("FILE_STORE") or "-1002793828826"))
+    ADMINS = list(map(int, getenv("ADMINS") or "5770911041").split()))
 
     RSS_ITEMS = getenv("RSS_ITEMS", "").split()
     SEND_SCHEDULE = getenv("SEND_SCHEDULE", "True").lower() == "true"
