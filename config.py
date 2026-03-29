@@ -11,8 +11,8 @@ class Var:
     API_ID = 20594537
     API_HASH = "c505a4e5bb7d482197875888af544f17"
     BOT_TOKEN = "8555965442:AAEGhqABnXtCTbPGlZPNUAk4hlu20ztgmg8555965442:AAEGhqABnXtCTbPGlZPNUAk4hlu20ztgmgY"
-    DB_URI = getenv("DB_URL")
-    DB_NAME = getenv("DB_NAME")
+    DB_URI = "mongodb+srv://reelcraft99:reelcraft99reelcraft@cluster0.f0sv73o.mongodb.net/?appName=Cluster0"
+    DB_NAME = "Anime_bot"
     BAN_SUPPORT = getenv("BAN_SUPPORT", "https://t.me/about_zani")
     FSUB_LINK_EXPIRY = int(getenv("FSUB_LINK_EXPIRY", "120"))
     CHANNEL_ID = int(getenv("CHANNEL_ID") or "-1002647889053")
