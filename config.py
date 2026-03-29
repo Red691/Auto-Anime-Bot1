@@ -9,7 +9,7 @@ LOGS = logging.getLogger(__name__)
 
 class Var:
     API_ID = 20594537
-    API_HASH = c505a4e5bb7d482197875888af544f17
+    API_HASH = "c505a4e5bb7d482197875888af544f17"
     BOT_TOKEN = "8555965442:AAEGhqABnXtCTbPGlZPNUAk4hlu20ztgmg8555965442:AAEGhqABnXtCTbPGlZPNUAk4hlu20ztgmgY"
     DB_URI = getenv("DB_URL")
     DB_NAME = getenv("DB_NAME")
