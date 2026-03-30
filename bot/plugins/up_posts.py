@@ -1,6 +1,7 @@
 import time
 import subprocess
 import logging
+from os import getenv
 from datetime import datetime
 from json import loads as jloads
 from os import path as ospath, execl
@@ -34,7 +35,7 @@ from bot.core.func_utils import (
 LOGGER = logging.getLogger(__name__)
 
 # MongoDB setup
-DB_URI = "mongodb+srv://reelcraft99:reelcraft99reelcraft@cluster0.f0sv73o.mongodb.net/?appName=Cluster0"
+DB_URI =  getenv("DB_URL")
 mongo_client = AsyncIOMotorClient(DB_URI)
 db = mongo_client['AutoAniOngoing']
 
